@@ -1,0 +1,6 @@
+data_url: "https://download.pytorch.org/tutorial/hymenoptera_data.zip"
+
+data_dir:
+  local_dir: data
+  zip_data: data.zip
+  unzip_data_dir: hymenoptera_data 

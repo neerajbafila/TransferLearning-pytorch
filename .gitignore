@@ -128,3 +128,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 /env
+/mlruns
+data/
+reSearchEnv/
+Logs/
+data/
