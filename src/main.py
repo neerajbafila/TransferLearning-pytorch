@@ -13,7 +13,7 @@ logging.basicConfig(
 def main():
     logging.info('Starting the application...')
     with mlflow.start_run() as run:
-        mlflow.run('.', '', use_conda=False)
+        mlflow.run('.', 'get_data', use_conda=False)
 
 if __name__ == "__main__":
     try:

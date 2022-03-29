@@ -4,5 +4,11 @@ conda_env: conda.yaml
 
 entry_points:
     main: 
-     command: "python src/main.py"
+        command: "python src/main.py"
+    
+    get_data:
+        config: {type: str, default: "config/config.yaml"}
+        command: "python src/stage_01_get_data.py"
+            
+
 

@@ -3,4 +3,13 @@ data_url: "https://download.pytorch.org/tutorial/hymenoptera_data.zip"
 data_dir:
   local_dir: data
   zip_data: data.zip
-  unzip_data_dir: hymenoptera_data 
+  unzip_data_dir: hymenoptera_data
+  train_data_path: train
+  test_data_path: val 
+parameters:
+  IMAGE_SIZE: [224,224]
+  rotation_degrees: 20
+  BATCH_SIZE: 32
+  EPOCH: 10
+  LR: 0.01
+  SEED: 2022
