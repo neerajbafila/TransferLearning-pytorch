@@ -13,3 +13,8 @@ parameters:
   EPOCH: 10
   LR: 0.01
   SEED: 2022
+
+artifacts:
+  artifacts_dir: artifacts
+  preTrained_model_dir: pretrained
+  preTrained_model_name: preTrainedModel.pth
