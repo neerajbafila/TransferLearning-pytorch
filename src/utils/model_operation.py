@@ -15,7 +15,7 @@ def get_param_details(model):
     """
     Get the details of the parameters in the model.
     """
-    logging.info("The details of the parameters in the model:")
+    # logging.info("The details of the parameters in the model:")
     parameters = {'Module': list(), 'Parameter': list()}
     total = {'Trainable': 0, 'Non-Trainable': 0}
     for name, param in model.named_parameters():

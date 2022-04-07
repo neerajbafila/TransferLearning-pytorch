@@ -18,3 +18,5 @@ artifacts:
   artifacts_dir: artifacts
   preTrained_model_dir: pretrained
   preTrained_model_name: preTrainedModel.pth
+  final_trained_model_dir: final_model
+  final_trained_model: final_trained_model.pth

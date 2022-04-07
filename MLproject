@@ -9,6 +9,15 @@ entry_points:
     get_data:
         config: {type: str, default: "config/config.yaml"}
         command: "python src/stage_01_get_data.py"
+    
+    getting_preTrained_model_alexnet:
+        config: {type: str, default: "config/config.yaml"}
+        command: "python src/stage_02_getting_preTrained_model_alexnet.py"
+    
+    train_newModel_by_preTrained_model:
+        config: {type: str, default: "config/config.yaml"}
+        command: "python src/stage_03_train_newModel_by_preTrained_model.py"
+
             
 
 

@@ -134,3 +134,4 @@ reSearchEnv/
 Logs/
 data/
 artifacts/pretrained/
+artifacts/final_model/

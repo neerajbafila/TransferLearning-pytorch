@@ -14,6 +14,8 @@ def main():
     logging.info('Starting the application...')
     with mlflow.start_run() as run:
         mlflow.run('.', 'get_data', use_conda=False)
+        mlflow.run('.', 'getting_preTrained_model_alexnet', use_conda=False)
+        mlflow.run('.', 'train_newModel_by_preTrained_model', use_conda=False)
 
 if __name__ == "__main__":
     try:

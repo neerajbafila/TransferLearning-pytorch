@@ -20,8 +20,8 @@ def main(config_path):
     logging.info(f"Getting pretrained Model")
     preTrained_model =  models.alexnet(pretrained=True) ## Imagenet dataset
     df, total = get_param_details(preTrained_model)
-    logging.info(f"The details of the parameters in the preTrained model: {df}, total params are {total}")
-    print(f"Total parameters are {total}")
+    logging.info(f"The details of the parameters in the preTrained model:\n{df}, total params are {total}")
+    # print(f"Total parameters are {total}")
     preTrained_model_path = Path(content['artifacts']['artifacts_dir'], content['artifacts']['preTrained_model_dir'])
     preTrained_model_name = content['artifacts']['preTrained_model_name']
     create_directory([preTrained_model_path])
@@ -33,10 +33,13 @@ def main(config_path):
 
 if __name__ == '__main__':
     try:
+        logging.info("\n************************************************")
+        logging.info(f">>>>>>>>>>>>{STAGE} started<<<<<<<<<<<<<<")
         parser = argparse.ArgumentParser()
         parser.add_argument("--config", "-c", help="path to config file", default="config/config.yaml")
         args = parser.parse_args()
         main(args.config)
+        logging.info(f">>>>>>>>>>>>{STAGE} Completed<<<<<<<<<<<<<<")
     except Exception as e:
         logging.exception(e)
         raise e
