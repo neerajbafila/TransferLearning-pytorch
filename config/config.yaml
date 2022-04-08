@@ -20,3 +20,5 @@ artifacts:
   preTrained_model_name: preTrainedModel.pth
   final_trained_model_dir: final_model
   final_trained_model: final_trained_model.pth
+  confusion_matrix_dir: confusion_matrix
+  confusion_matrix_fig_name: confusion_matrix.png
